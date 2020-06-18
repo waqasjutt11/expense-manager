@@ -1,0 +1,19 @@
+
+    .container {
+      flex:1,
+      backgroundColor grey,
+      justifyContent 'center',
+      alignItems 'center'
+    }
+    .title{
+      position: 'absolute',
+      fontFamily 'Roboto',
+      fontStyle 'normal',
+      fontWeight 'bold',
+      fontSize 48,
+      lineHeight 45,
+      alignSelf 'center',
+      letterSpacing -0.02,
+      color '#FFFFFF'
+    }
+  
