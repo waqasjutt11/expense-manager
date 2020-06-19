@@ -1,9 +1,10 @@
 import React from 'react'
+import '../App'
+    function Header(){
+        return(
+    
 
-const Header = () => {
-    return (
-            <h2 style={{textAlign: "center", fontFamily: "freestyle script", fontSize:"30", textDecoration: "underline"}}>Expense Manager</h2>
-       
+      <h1 style={{textAlign: "center", fontFamily: "MV Boli", fontSize:"30", textDecoration: "underline", marginTop:"0%"}}>Expense Manager App</h1>
     )
 }
 export default Header;

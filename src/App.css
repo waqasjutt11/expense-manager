@@ -1,19 +1,118 @@
+.container{
+    margin: 30px auto;
+    width: 350px;
+    background-color: #e0e0e0;
 
-    .container {
-      flex:1,
-      backgroundColor grey,
-      justifyContent 'center',
-      alignItems 'center'
-    }
-    .title{
-      position: 'absolute',
-      fontFamily 'Roboto',
-      fontStyle 'normal',
-      fontWeight 'bold',
-      fontSize 48,
-      lineHeight 45,
-      alignSelf 'center',
-      letterSpacing -0.02,
-      color '#FFFFFF'
-    }
+}
+.Balance{
+    text-emphasis: none;
+    letter-spacing: 1px;
+    padding-left: 5%;
+
+}
+h1{
+    background-color: #ff9800;
+}
+.head1{
+    margin-top: -5%;
+    color: #4caf50
+}
+.head1:hover{
+  background-color: #ff9800;
+  color: black;
+}
+.AccSumm {
+    background-color: #e0e0e0;
+    box-shadow: var(--box-shadow);
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    border: 2px solid #ff9800;
+    padding: 20px;
+    height: 65px
+  }
+  
+  .AccSumm > div {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .AccSumm > div:first-of-type {
+    border-right: 1px solid #ff9800;
+    color: black;    
+   
+  }
+.money.plus {
+    color: #b6960a;
+    font-weight: bold;
+    margin-top: -1%;
+     }
+  .money.plus:hover{
+    background-color: #ff9800;
+    color: Black
+  }
+  .money.minus {
+    color: #2da3ad;
+    margin-top: -2%;  
+    font-weight: bold;
+  }
+  .money.minus:hover{
+    background-color: #ff9800;
+    color: black;
+  }
+  .historyh4{
+      text-align: center;
+      flex: 1;
+      padding: 4% 0;
+      color: #dd2c00;
+  
+  }
+  .historyh4:hover{
+      background-color: #ff9800;
+      color: black
+      
+  }
+  .AddTransaction{
+      text-align: center;
+      flex: 1;
+      padding: 4% 0px;
+      color: #00b8d4;   
+      margin-bottom: 5%;
+  }
+  .AddTransaction:hover{
+    background-color: #ff9800;
+    color: black;
+  }
+  
+  .btn {
+    cursor: pointer;
+    background-color: #0288d1;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  .btn:focus,
+  .delete-btn:focus {
+    outline: 5px;
+  }
+  .btn:hover{
+    background-color: #ff9800;
+    color:black;
+  }
+  input[type='number'] {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
   
