@@ -32,4 +32,4 @@ jobs:
     - name: installsurge
       run: sudo npm install --global surge
     - name: Deploythesurge
-      run: sudo surge ./build expense-manaer-by-waqas.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: sudo surge ./build expense-manager-by-waqas.surge.sh --token ${{ secrets.SURGE_TOKEN }}
