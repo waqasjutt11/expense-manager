@@ -6,20 +6,25 @@ import AccontSummary from './components/AccountSummary'
 import TransactionHistory from './components/TransactionHistory'
 import AddTransaction from './components/AddTransaction'
 import SeletTransactions from './components/SelectTransaction'
-import SelectExpense from './components/SelectExpense'
+//import SelectExpense from './components/SelectExpense'
+import {GlobalProvider} from './context/Globalcontext'
 //import Statusbar from './components/Statusbar'
 function App() {
   return (
-    <div className="container">
+    <GlobalProvider>
+   
+    
+     <div className="container">
      <Header/>
      <Balance></Balance>
      <AccontSummary></AccontSummary>
      <TransactionHistory></TransactionHistory>
      <AddTransaction></AddTransaction>
      <SeletTransactions></SeletTransactions>
-     <SelectExpense></SelectExpense>
+     </div>
+
+     </GlobalProvider>
      
-    </div>
   );
 }
 

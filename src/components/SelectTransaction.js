@@ -1,39 +1,47 @@
-import React from 'react'
-import Select from 'react-select';
+import React, {useState, useContext} from 'react'
 import '../App'
-const options = [
-    { value: 'atm', label: 'ATM' },
-    { value: 'check', label: 'Check' },
-    { value: 'jazzcash', label: 'JazzCash' },
-    { value: 'Transfer', label: 'Transfer' },
-    {value: 'Deposit', label: 'Deposit'},
-    { vlaue: 'salary', label: 'Salary'},
-    { value:'others', label: 'Others'} 
-  ];
+import {GlobalContext} from '../context/Globalcontext'
+
   
-  class SelectTransaction extends React.Component {
-    render(){
+  
+  function SelectTransaction() {
+    const { addTransaction } = useContext(GlobalContext);
+    const [amount, setAmount]= useState(0);
+    const [text, setText] = useState('')
+    const onSubmit= (e) =>{ 
+        e.preventDefault();
+        console.log(text, amount)
+        const newTransaction={
+          id:  Math.floor(Math.random() * 100000000),
+           text,
+           amount: +amount
+        }
+        addTransaction(newTransaction);
+    }
       return (
-          <div>
+          <div> 
+         <form onSubmit={onSubmit}>
               <div>
-          <h4>Select Your Transaction</h4>
-        <Select className="form-control" options = {options} />
-        </div>
-        <div className="form-controls" >
-            <label htmlFor="Amount Of Transaction"><h4>Transactional Amount</h4></label>
+                  <label htmlFor="text" ><h4><strong>Text</strong></h4></label>
+
+                  <input type="text" value={text} onChange={(e)=> setText(e.target.value) } placeholder="Your Transactions..." required/>
+      
+                  <label htmlFor="amount"><h4>Transactional Amount</h4></label>
             
-            <input  type="number" className="inputtrans"style={{width: '325px', height: '25px'}}  
-                            required="required" />
+                  <input  type="tel"  value={amount} onChange={(e)=> setAmount(e.target.value)}  placeholder="Enter Amount..." required />
 
-
-        </div>
-        <button className="btn">Add Transaction</button>
+                 <button className="btn">Add Transaction</button>
+            
+          </div>
+        
+        
+        </form>
+        
 
         </div>
       );
 
     }
-  }
   export default SelectTransaction;
 
 

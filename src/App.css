@@ -11,7 +11,8 @@
 
 }
 h1{
-    background-color: #ff9800;
+  margin-top: -20%;
+  background-color: #ff9800;
 }
 .head1{
     margin-top: -5%;
@@ -44,18 +45,23 @@ h1{
    
   }
 .money.plus {
-    color: #b6960a;
+    color: #168b4b;
     font-weight: bold;
     margin-top: -1%;
+    padding: 0%;
+    font-weight: bold;
+    font-size: 18px;
+
      }
   .money.plus:hover{
     background-color: #ff9800;
     color: Black
   }
   .money.minus {
-    color: #2da3ad;
+    color: #dd2c00;
     margin-top: -2%;  
     font-weight: bold;
+    font-size: 18px;
   }
   .money.minus:hover{
     background-color: #ff9800;
@@ -63,9 +69,9 @@ h1{
   }
   .historyh4{
       text-align: center;
-      flex: 1;
-      padding: 4% 0;
+      padding: 2% 2% 0 5%;
       color: #dd2c00;
+      height: 20%;
   
   }
   .historyh4:hover{
@@ -76,7 +82,7 @@ h1{
   .AddTransaction{
       text-align: center;
       flex: 1;
-      padding: 4% 0px;
+      padding: 2% 2% 0 5%;
       color: #00b8d4;   
       margin-bottom: 5%;
   }
@@ -99,20 +105,81 @@ h1{
     font-weight: bold;
   }
   
-  .btn:focus,
-  .delete-btn:focus {
+  .btn:focus
+  {
     outline: 5px;
   }
   .btn:hover{
     background-color: #ff9800;
     color:black;
   }
-  input[type='number'] {
+  input[type='tel'] {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 94%;
+  }
+  input[type='text'] {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 94%;
+  }
+  .transacction-select{
     border: 1px solid #dedede;
     border-radius: 5px;
     display: block;
     font-size: 16px;
     padding: 10px;
     width: 100%;
+    box-shadow: 0 0 10px #ff9800;
   }
   
+.delete-button{
+  font-weight: bold;
+  cursor: pointer;
+  background-color:#00b8d4 ;
+  
+}
+  .delete-buttontn:focus {
+    outline: 5px;
+    font-weight: bold;
+  }
+    .delete-button:hover{
+      background-color: red;
+      color: black;
+    }
+    
+
+    .history-ul{
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 40px;
+      
+    }
+    .history-ul li{
+      background-color: #fff;
+      box-shadow: var(--box-shadow);
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding: 8px;
+      margin: 10px 0;
+      height: 5%;
+      font-weight: bold;
+      
+    }
+    li.minus{
+      border-right: 5px solid #c0392b;
+    }
+     li.plus{
+      border-right: 5px solid #2ecc71;
+    }
+    body{
+      background-image: url('./components//background/Flying-Dollars-PNG-Picture.png');
+    }
