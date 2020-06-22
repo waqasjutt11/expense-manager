@@ -1,7 +1,7 @@
 .container{
-    margin: 30px auto;
+    margin: auto;
     width: 350px;
-    background-color: #e0e0e0;
+    background-color: #a1cb88;
 
 }
 .Balance{
@@ -82,13 +82,10 @@ h1{
   .AddTransaction{
       text-align: center;
       flex: 1;
-      padding: 2% 2% 0 5%;
-      color: #00b8d4;   
+      padding: 2% 2% 0 5%;   
       margin-bottom: 5%;
-  }
-  .AddTransaction:hover{
-    background-color: #ff9800;
-    color: black;
+      background-color: #ff9800;
+      color: black;
   }
   
   .btn {
@@ -129,7 +126,7 @@ h1{
     padding: 10px;
     width: 94%;
   }
-  .transacction-select{
+  .transaction-select{
     border: 1px solid #dedede;
     border-radius: 5px;
     display: block;
@@ -142,12 +139,12 @@ h1{
 .delete-button{
   font-weight: bold;
   cursor: pointer;
-  background-color:#00b8d4 ;
+  background-color:#2ecc71 ;
+  
   
 }
   .delete-buttontn:focus {
     outline: 5px;
-    font-weight: bold;
   }
     .delete-button:hover{
       background-color: red;
@@ -181,5 +178,7 @@ h1{
       border-right: 5px solid #2ecc71;
     }
     body{
-      background-image: url('./components//background/flying\ dollar.png');
+      background-image: url('./components/background/image.png');
+      width: auto;
+      background-repeat: round ;
     }

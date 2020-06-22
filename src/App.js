@@ -11,11 +11,11 @@ import {GlobalProvider} from './context/Globalcontext'
 //import Statusbar from './components/Statusbar'
 function App() {
   return (
-    <GlobalProvider>
-   
+    <GlobalProvider  >
+      
     
      <div className="container">
-     <Header/>
+     <Header/> 
      <Balance></Balance>
      <AccontSummary></AccontSummary>
      <TransactionHistory></TransactionHistory>

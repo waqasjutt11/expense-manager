@@ -6,6 +6,7 @@ import {GlobalContext} from '../context/Globalcontext'
   
   function SelectTransaction() {
     const { addTransaction } = useContext(GlobalContext);
+    
     const [amount, setAmount]= useState(0);
     const [text, setText] = useState('')
     const onSubmit= (e) =>{ 
